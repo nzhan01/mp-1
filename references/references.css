@@ -153,3 +153,77 @@ footer{
 footer a{
     color: bisque;
 }
+@media screen and (max-width: 900px) {
+    header{
+        align-items: center;
+    }
+
+    #container{
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #3A5A40;
+        list-style: none;
+        padding-left: 0;
+    }
+
+    nav li{
+        font-size: calc(2px + 1.5vw);
+        background-color:var(--sage);
+        padding: 1% .5%;
+        margin: 1% .5%;
+    }
+
+    nav a{
+        text-decoration: none;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        height: 100vh;
+        background-color: #dad7cdff;
+    }
+
+    main p{
+        margin: 2% 2%;
+        font-size: calc(2px + 3vw);
+    }
+
+    #profile-image{
+        max-width: 100%;
+    }
+
+    #main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #main-text{
+        align-self: center;
+        width: 100%;
+        margin: 1vh 1vw;
+    }
+
+    #main-image{
+        margin: 1vh auto;
+    }
+
+    #main-title{
+        text-align: center;
+        color: var(--hunter-green);
+    }
+}
