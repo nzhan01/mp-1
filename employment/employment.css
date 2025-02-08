@@ -141,6 +141,9 @@ footer a{
 }
 
 @media screen and (max-width: 900px) {
+    #page-wrapper {
+        width: 100%;
+    }
     header{
         align-items: center;
     }
