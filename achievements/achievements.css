@@ -1,0 +1,137 @@
+
+
+/*color pallet from Coolor.co
+W3schools on how to declare color variables
+ */
+
+
+
+
+:root {
+    --timberwolf: #dad7cdff;
+    --sage: #a3b18aff;
+    --fern-green: #588157ff;
+    --hunter-green: #3a5a40ff;
+    --brunswick-green: #344e41ff;
+}
+
+html{
+    font-family: "Times New Roman", Helvetica, sans-serif;
+}
+
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Centering the page*/
+#page-wrapper{
+    width: 70vw;
+    margin: 0 auto;
+}
+
+/*Header starts*/
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 2vw;
+    background-color: #344E41;
+    color: bisque;
+}
+/*Header ends*/
+
+/*Two column container starts:*/
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: #dad7cdff;
+    height: 90%;
+
+
+}
+
+nav{
+    width: 30%;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #3A5A40;
+    font-size: calc(2px + 2vw);
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+nav li{
+    font-size: calc(3px + 2vw);
+    width: 80%;
+    background-color: var(--sage);
+    padding: 2vh 0;
+    margin: 5vh auto;
+    border-radius: 49%;
+    /*https://www.w3schools.com/cssref/css3_pr_border-radius.php*/
+}
+
+
+nav a{
+    text-decoration: none;
+    color: black;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    background-color: #dad7cdff;
+    height: 100%;
+    align-self: start;
+    padding: 1vh 2vw;
+    font-size: calc(1px + 1.4vw);
+}
+
+main p{
+    margin: 0 1vw;
+    font-size: calc(2px + 1.5vw);
+    width: 80%;
+    align-self: center;
+
+
+}
+
+
+
+
+
+#main-title{
+
+    text-align: center;
+    font-size: calc(2px + 4vw);
+    color: var(--hunter-green);
+
+}
+
+/*Two column container ends*/
+
+footer{
+    background-color: #344E41;
+    color: bisque;
+    padding: 1vh 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+
+footer a{
+    color: bisque;
+}

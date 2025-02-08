@@ -1,0 +1,217 @@
+
+
+/*color pallet from Coolor.co
+W3schools on how to declare color variables
+ */
+:root {
+    --timberwolf: #dad7cdff;
+    --sage: #a3b18aff;
+    --fern-green: #588157ff;
+    --hunter-green: #3a5a40ff;
+    --brunswick-green: #344e41ff;
+}
+
+html{
+    font-family: "Times New Roman", Helvetica, sans-serif;
+}
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Centering the page*/
+#page-wrapper{
+    width: 70vw;
+    margin: 0 auto;
+}
+
+/*Header starts*/
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 2vw;
+    background-color: #344E41;
+    color: bisque;
+}
+/*Header ends*/
+
+/*Two column container starts:*/
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: #dad7cdff;
+    height: 90%;
+
+
+}
+
+nav{
+    width: 30%;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #3A5A40;
+    font-size: calc(2px + 2vw);
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+nav li{
+    font-size: calc(3px + 2vw);
+    width: 80%;
+    background-color: var(--sage);
+    padding: 2vh 0;
+    margin: 5vh auto;
+    border-radius: 49%;
+    /*https://www.w3schools.com/cssref/css3_pr_border-radius.php*/
+}
+
+
+nav a{
+    text-decoration: none;
+    color: black;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    background-color: #dad7cdff;
+    height: 100%;
+    align-self: start;
+    padding: 1vh 2vw;
+
+
+
+}
+
+main p{
+    margin: 0 1vw;
+    font-size: calc(1px + 1.5vw);
+    width: 80%;
+    align-self: center;
+
+
+}
+
+#profile-image{
+    max-width: 100%;
+
+}
+
+#main-image{
+    align-self: center;
+    width: 80%;
+    margin: 0.5vh 1vw;
+
+}
+
+#main-title{
+
+    text-align: center;
+    font-size: calc(4px + 6vw);
+    color: var(--hunter-green);
+
+}
+
+/*Two column container ends*/
+
+footer{
+    background-color: #344E41;
+    color: bisque;
+    padding: 1vh 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+
+footer a{
+    color: bisque;
+}
+
+@media screen and (max-width: 900px) {
+    header{
+        align-items: center;
+    }
+
+    #container{
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #3A5A40;
+        list-style: none;
+        padding-left: 0;
+    }
+
+    nav li{
+        font-size: calc(2px + 1.5vw);
+        background-color:var(--sage);
+        padding: 1% .5%;
+        margin: 1% .5%;
+    }
+
+    nav a{
+        text-decoration: none;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        height: 100vh;
+        background-color: #dad7cdff;
+    }
+
+    main p{
+        margin: 2% 2%;
+        font-size: calc(2px + 3vw);
+    }
+
+    #profile-image{
+        max-width: 100%;
+    }
+
+    #main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #main-text{
+        align-self: center;
+        width: 100%;
+        margin: 1vh 1vw;
+    }
+
+    #main-image{
+        margin: 1vh auto;
+    }
+
+    #main-title{
+        text-align: center;
+        color: var(--hunter-green);
+    }
+}

@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="description" content = "Projects page for resume website for Nicholas Zhang">
+        <title> Projects | Resume </title>
+        <link type ="text/css" rel="stylesheet" href = "projects.css" >
+    </head>
+    <body>
+        <div id = "page-wrapper">
+            <header>
+                <h1>Nicholas Zhang</h1>
+                <p>My Resume Website</p>
+            </header>
+
+            <div id = "container">
+
+
+
+                <nav>
+                    <ul>
+                        <li> <a href ="../main/index.html"><b>Home</b> </a></li>
+                        <li> <a href = "../education/education.html"><b>Education</b></a></li>
+                        <li> <a href = "../employment/employment.html"><b>Employment</b></a></li>
+                        <li> <a href = "../projects/projects.html"><b>Projects</b></a></li>
+                        <li> <a href = "../references/references.html"><b>References</b></a></li>
+                        <li> <a href = "../achievements/achievements.html"><b>Achievements</b></a></li>
+                    </ul>
+                </nav>
+
+
+                <main>
+                    <div id = main-title>
+                        <h2>Projects</h2>
+                    </div>
+
+                    <div id = "calculator-title">
+                        <h2><i><b>Calculosaurus</b></i></h2>
+                    </div>
+
+                    <div class="dinosaur-pics">
+                        <img id="t-rex" src="../t-rex.png.jpg" alt="t-rex-image">
+                        <img id="stego" src="../stego.png" alt="stego-image">
+                        <img id="triceratop" src="../triceratops.jpeg" alt="triceratop-image">
+                    </div>
+
+                <div id ="calculator">
+
+
+                    <!--calculator interface with inputs and buttons  -->
+                    <div id="inputs">
+                            <label for="input1" >first number: </label><input id ="input1">
+                            <label for="input2" >second number: </label><input id ="input2">
+                    </div>
+
+
+                    <div id = "buttons-container">
+                        <div id="button-legs">
+                            <div id ="left-leg">
+                                <button onclick="calculator('+')"> + </button>
+                                <button onclick="calculator('-')"> - </button>
+                            </div>
+                            <div id ="right-leg">
+                                <button onclick="calculator('*')"> * </button>
+                                <button onclick="calculator('/')"> / </button>
+                            </div>
+                        </div>
+                        <div id ="neck">
+                            <button onclick="calculator('**')"> ** </button>
+                            <button onclick="clearInputs()"> clear </button>
+                        </div>
+
+                    </div>
+                    <!--return result -->
+                    <div id="calculator-result">
+                        <p id="result" ></p>
+                        <p id="error-message"></p>
+                    </div>
+
+                </div>
+
+                </main>
+
+            </div>
+            <footer>
+                <p>All Rights Reserved by Nicholas Zhang <a href="../credits/credits.html"> Credits</a> &copy;</p>
+            </footer>
+        </div>
+        <script src="projects.js"></script>
+    </body>
+
+</html>
+
+
+
+
+
