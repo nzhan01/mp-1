@@ -199,9 +199,7 @@ footer a{
         font-size: calc(2px + 3vw);
     }
 
-    #profile-image{
-        max-width: 100%;
-    }
+
 
     #main{
         width: 100%;
@@ -216,8 +214,9 @@ footer a{
         margin: 1vh 1vw;
     }
 
-    #main-image{
-        margin: 1vh auto;
+    h3{
+        margin-left: calc(5px + 3vw);
+        font-size: calc(2px + 4vw);
     }
 
     #main-title{

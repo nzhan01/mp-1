@@ -70,8 +70,8 @@ button{
 #t-rex, #stego, #triceratop{
     display: flex;
     flex-direction: row;
-    max-width: 20%;
-    max-height: 20%;
+    max-width: 30%;
+    max-height: 30%;
     margin: 0.25vh;
 }
 #calculator {
@@ -267,9 +267,7 @@ footer a{
         font-size: calc(2px + 3vw);
     }
 
-    #profile-image{
-        max-width: 100%;
-    }
+
 
     #main{
         width: 100%;
@@ -292,4 +290,8 @@ footer a{
         text-align: center;
         color: var(--hunter-green);
     }
+
 }
+
+
+
